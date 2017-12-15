@@ -1,0 +1,66 @@
+﻿@model DBGames.Models.Game
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Game</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Developer.DeveloperName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Developer.DeveloperName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Engine.EngineName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Engine.EngineName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Platform.PlatformName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Platform.PlatformName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Genre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Genre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Mode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Mode)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.GameId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
